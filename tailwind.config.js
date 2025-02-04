@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -7,13 +7,3 @@ module.exports = {
   },
   plugins: [],
 };
-=======
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
->>>>>>> 0361434 (Initial commit)

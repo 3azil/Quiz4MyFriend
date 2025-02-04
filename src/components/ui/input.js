@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const Input = ({ value, onChange, className }) => {
   return (
     <input
@@ -11,17 +10,3 @@ const Input = ({ value, onChange, className }) => {
 };
 
 export default Input;
-=======
-const Input = ({ value, onChange, className }) => {
-  return (
-    <input
-      type="text"
-      value={value}
-      onChange={onChange}
-      className={`border p-2 rounded w-full text-center ${className}`}
-    />
-  );
-};
-
-export default Input;
->>>>>>> 0361434 (Initial commit)

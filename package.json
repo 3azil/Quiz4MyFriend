@@ -1,9 +1,6 @@
 {
   "name": "riddle-app",
-<<<<<<< HEAD
    "homepage": "https://3azil.github.io/nedeusneploho",
-=======
->>>>>>> 0361434 (Initial commit)
   "version": "0.1.0",
   "private": true,
   "dependencies": {
