@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 
 const Card = ({ children, className }) => {
@@ -15,3 +16,22 @@ const CardContent = ({ children, className }) => {
 
 export { CardContent };
 export default Card;
+=======
+import React from "react";
+
+const Card = ({ children, className }) => {
+  return (
+    <div className={`bg-white shadow-md rounded-lg p-4 ${className}`}>
+      {children}
+    </div>
+  );
+};
+
+const CardContent = ({ children, className }) => {
+  return <div className={className}>{children}</div>;
+};
+
+
+export { CardContent };
+export default Card;
+>>>>>>> 0361434 (Initial commit)
