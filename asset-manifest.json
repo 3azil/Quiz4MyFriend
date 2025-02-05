@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/3azil/Quiz4MyFriend/static/css/main.dfc34f83.css",
-    "main.js": "/3azil/Quiz4MyFriend/static/js/main.d32e5889.js",
-    "static/js/488.5dd2b63a.chunk.js": "/3azil/Quiz4MyFriend/static/js/488.5dd2b63a.chunk.js",
-    "index.html": "/3azil/Quiz4MyFriend/index.html",
-    "main.dfc34f83.css.map": "/3azil/Quiz4MyFriend/static/css/main.dfc34f83.css.map",
-    "main.d32e5889.js.map": "/3azil/Quiz4MyFriend/static/js/main.d32e5889.js.map",
-    "488.5dd2b63a.chunk.js.map": "/3azil/Quiz4MyFriend/static/js/488.5dd2b63a.chunk.js.map"
+    "main.css": "/Quiz4MyFriend/static/css/main.dfc34f83.css",
+    "main.js": "/Quiz4MyFriend/static/js/main.9d4b7fd8.js",
+    "static/js/488.5dd2b63a.chunk.js": "/Quiz4MyFriend/static/js/488.5dd2b63a.chunk.js",
+    "index.html": "/Quiz4MyFriend/index.html",
+    "main.dfc34f83.css.map": "/Quiz4MyFriend/static/css/main.dfc34f83.css.map",
+    "main.9d4b7fd8.js.map": "/Quiz4MyFriend/static/js/main.9d4b7fd8.js.map",
+    "488.5dd2b63a.chunk.js.map": "/Quiz4MyFriend/static/js/488.5dd2b63a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfc34f83.css",
-    "static/js/main.d32e5889.js"
+    "static/js/main.9d4b7fd8.js"
   ]
 }
