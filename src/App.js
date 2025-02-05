@@ -1,9 +1,7 @@
 import { useState } from "react";
-import {CardContent } from "./components/ui/card";
-import { motion } from "framer-motion";
 import Card from "./components/ui/card";
 import Input from "./components/ui/input";
-import Button from "./components/ui/button";
+import Button from "./components/ui/button.js";
 import Progress from "./components/ui/progress.js";
 
 
@@ -42,58 +40,55 @@ export default function RiddleApp() {
   };
 
   return (
-    <div className="card-container">
-      <div className="card">
-        {step === 0 ? (
-          <div className="card-content">
-            <h1>Поздравляем Тебя с Днем Рождения!</h1>
-            <p>Желаем счастья, радости и успехов во всех твоих начинаниях!</p>
-            <p>Побольше деняг, поменьше проблем и забот!</p>
-            <p>Успеха успешного, Любви и Самое главое:</p>
-            <h1>Сильных Людей Рядом❤️‍🔥</h1>
-            <button className="button" onClick={() => setStep(1)}>
-              Продолжить
-            </button>
-          </div>
-        ) : step <= riddles.length ? (
-          <div className="card-content">
-            <div className="progress-bar-container">
-              <div
-                className="progress-bar"
-                style={{ width: `${(step / riddles.length) * 100}%` }}
-              ></div>
+      <div className="card-container">
+        <div className="card">
+          {step === 0 ? (
+            <div className="card-content">
+              <h1>Поздравляем Тебя с Днем Рождения!</h1>
+              <p>Желаем счастья, радости и успехов во всех твоих начинаниях!</p>
+              <p>Побольше деняг, поменьше проблем и забот!</p>
+              <p>Успеха успешного, Любви и Самое главное:</p>
+              <h1>Сильных Людей Рядом❤️‍🔥</h1>
+              <button className="button" onClick={() => setStep(1)}>
+                Продолжить
+              </button>
             </div>
-            <p>{riddles[step - 1]?.question}</p>
-            <input
-              className="input-field"
-              value={answers[step - 1]}
-              onChange={(e) => handleChange(e.target.value)}
-            />
-            <button
-              className="button"
-              onClick={nextStep}
-              disabled={!isAnswerCorrect}
-            >
-              Перейти к следующей головоломке
-            </button>
-          </div>
-        ) : (
-          <div className="card-content">
-            <h1>Поздравляю!</h1>
-            <p>Ты успешно прошел все загадки!</p>
-            <p>Вот твой заслуженный приз</p>
-            <p> ⇩ ⇩ ⇩ ⇩ </p>
-            {/* Открытие изображения по клику */}
-            <a
-              href={`${process.env.PUBLIC_URL}/certificate.jpg`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="button">Получить Приз</button>
-            </a>
-          </div>
-        )}
+          ) : step <= riddles.length ? (
+            <div className="card-content">
+              {/* Прогресс-бар: значение вычисляется по формуле ((step - 1) / total) * 100 */}
+              <Progress value={((step - 1) / riddles.length) * 100} />
+              <p>{riddles[step - 1]?.question}</p>
+              <input
+                className="input-field"
+                value={answers[step - 1]}
+                onChange={(e) => handleChange(e.target.value)}
+              />
+              <button
+                className="button"
+                onClick={nextStep}
+                disabled={!isAnswerCorrect}
+              >
+                Перейти к следующей головоломке
+              </button>
+            </div>
+          ) : (
+            <div className="card-content">
+              <h1>Поздравляю!</h1>
+              <p>Ты успешно прошел все загадки!</p>
+              <p>Вот твой заслуженный приз</p>
+              <p> ⋆✴︎˚｡⋆⋆✴︎˚｡⋆⋆✴︎˚｡⋆ </p>
+              <a
+                href={`${process.env.PUBLIC_URL}/certificate.jpg`}
+                download="certificate.jpg"
+              >
+                <button className="button">Получить Приз</button>
+              </a>
+            </div>
+          )}
+        </div>
+        <footer className="footer">
+          <p>by 3azil</p>
+        </footer>
       </div>
-    </div>
   );
 }
