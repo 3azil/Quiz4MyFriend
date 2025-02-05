@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/3azil/nedeusneploho/static/css/main.69f326a8.css",
+    "main.js": "/3azil/nedeusneploho/static/js/main.259ec952.js",
+    "static/js/488.5dd2b63a.chunk.js": "/3azil/nedeusneploho/static/js/488.5dd2b63a.chunk.js",
+    "index.html": "/3azil/nedeusneploho/index.html",
+    "main.69f326a8.css.map": "/3azil/nedeusneploho/static/css/main.69f326a8.css.map",
+    "main.259ec952.js.map": "/3azil/nedeusneploho/static/js/main.259ec952.js.map",
+    "488.5dd2b63a.chunk.js.map": "/3azil/nedeusneploho/static/js/488.5dd2b63a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69f326a8.css",
+    "static/js/main.259ec952.js"
+  ]
+}
