@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/nedeusneploho/static/css/main.dfc34f83.css",
-    "main.js": "/nedeusneploho/static/js/main.b9521157.js",
-    "static/js/488.5dd2b63a.chunk.js": "/nedeusneploho/static/js/488.5dd2b63a.chunk.js",
-    "index.html": "/nedeusneploho/index.html",
-    "main.dfc34f83.css.map": "/nedeusneploho/static/css/main.dfc34f83.css.map",
-    "main.b9521157.js.map": "/nedeusneploho/static/js/main.b9521157.js.map",
-    "488.5dd2b63a.chunk.js.map": "/nedeusneploho/static/js/488.5dd2b63a.chunk.js.map"
+    "main.css": "/Quiz4MyFriend/static/css/main.dfc34f83.css",
+    "main.js": "/Quiz4MyFriend/static/js/main.9d4b7fd8.js",
+    "static/js/488.5dd2b63a.chunk.js": "/Quiz4MyFriend/static/js/488.5dd2b63a.chunk.js",
+    "index.html": "/Quiz4MyFriend/index.html",
+    "main.dfc34f83.css.map": "/Quiz4MyFriend/static/css/main.dfc34f83.css.map",
+    "main.9d4b7fd8.js.map": "/Quiz4MyFriend/static/js/main.9d4b7fd8.js.map",
+    "488.5dd2b63a.chunk.js.map": "/Quiz4MyFriend/static/js/488.5dd2b63a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfc34f83.css",
-    "static/js/main.b9521157.js"
+    "static/js/main.9d4b7fd8.js"
   ]
 }
