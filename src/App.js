@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Card from "./components/ui/card";
 import Input from "./components/ui/input";
 import Button from "./components/ui/button";
-import Progress from "./components/ui/progress";
+import Progress from "./components/ui/progress.js";
 
 
 const riddles = [
@@ -14,11 +14,10 @@ const riddles = [
       "Как называется удар, когда игрок отправляет мяч в низкую траекторию, чтобы тот не пересекал сетку?",
     answer: "подсечка",
   },
-  { question: "Что лучше всего подходит для ОффРоуда?", answer: "каршеринг" },
+  { question: "Что лучше всего подходит для ОффРоуда ?", answer: "каршеринг" },
   {
-    question:
-      "Как называется турнир, который является одним из четырёх крупнейших в теннисном календаре?",
-    answer: "уимблдон",
+    question: "Как расшифровывается 'РТТ' ?",
+    answer: "российский теннисный тур",
   },
   { question: "Что всегда перед нами, но мы его не видим?", answer: "будущее" },
 ];
@@ -80,11 +79,13 @@ export default function RiddleApp() {
           </div>
         ) : (
           <div className="card-content">
-            <h1>Поздравляем!</h1>
+            <h1>Поздравляю!</h1>
             <p>Ты успешно прошел все загадки!</p>
+            <p>Вот твой заслуженный приз</p>
+            <p> ⇩ ⇩ ⇩ ⇩ </p>
             {/* Открытие изображения по клику */}
             <a
-              href="/certificate.jpg"
+              href={`${process.env.PUBLIC_URL}/certificate.jpg`}
               target="_blank"
               rel="noopener noreferrer"
             >

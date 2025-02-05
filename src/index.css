@@ -83,12 +83,12 @@ p {
 }
 
 .button:disabled {
-  background-color: #ccc;
+  background-color: #484848;
   cursor: not-allowed;
 }
 
 .button:hover {
-  background-color: #45a049;
+  background-color: #484848;
 }
 
 .progress-bar {
